@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    car = {
+        brand : "Maruti",
+        Model : "Swift Dzire",
+        year : 2015
+    }
+    document.write(car.brand,"<br>",car.Model)
+    car.year = 2016
+    document.write("<br>",car.year,"<br>")
+    car['color']='blue'
+    document.write(car.color,"<br>")
+    document.write(JSON.stringify(car))
+</script>
+</body>
+</html>

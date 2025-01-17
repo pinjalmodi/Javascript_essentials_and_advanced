@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d = parseInt(prompt("Enter a number to divide"))
+        const n = parseInt(prompt('Enter n'))
+
+        try{
+            if (d%n === 0) {
+                document.write("Answer is",d/n)
+            }
+            else{
+                throw new Error("Not divisible")
+
+            }
+        
+        }
+        catch (error){
+            document.write("Error::",error.message)
+        }
+    </script>
+</body>
+</html>
